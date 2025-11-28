@@ -2,12 +2,19 @@
 
 > **Tagline:** The intelligence is not (just) in the model. It's in the connectors.
 
-Connector OS ("Trenchcoat") is a model-agnostic **operating system for AI connectors**.
+A modular human–AI architecture grounded in adaptive control, feedback loops, and threshold-based stability.
 
-Instead of trying to solve everything with one big brain, we treat:
-- sensors, wearables, AR/VR, smart lights, LLMs, haptics, etc.
+---
 
-as **disassembled parts of a larger machine** — and the OS is the trenchcoat that snaps them together.
+## Introduction
+
+Connector OS is a modular architecture for human–AI interaction built around a simple principle:
+
+> **Stability emerges from feedback, thresholds, and adaptive control — not prediction alone.**
+
+Modern AI systems rely primarily on prediction. Connector OS provides the missing half: **state-aware regulation**.
+
+Instead of trying to solve everything with one big brain, we treat sensors, wearables, AR/VR, smart lights, LLMs, and haptics as **disassembled parts of a larger machine** — and the OS is the trenchcoat that snaps them together.
 
 The core claim:
 
@@ -15,33 +22,42 @@ The core claim:
 
 ---
 
-## 1. Motivation
+## What This Repository Documents
 
-Today's frontier models:
-- Hallucinate when the signal is low-fidelity.
-- Feel "dumb" without scratchpads, tools, or context.
-- Are exhausting to use (prompt engineering, long text back-and-forth).
-- Waste energy on guesswork because they don't know your state.
+- **The 8-layer architecture stack** — from raw sensors → CMP normalization → control logic → actuators → co-thought
+- **The MVM (Minimum Viable Module) design pattern** — starting with MVM-1, a real, buildable HRV-based "vibe-check" module
+- **Cross-domain engineering validations** — from hydrology, power grids, resonance physics, control theory, and cognition
+- **Optional physics appendices** — including Helix Engine V3 and HQG Kernel, provided for completeness (not required for implementation)
 
-At the same time, the world is full of **underused connectors**:
-- Apple Watch / Oura / wearables
-- AR/VR glasses
-- Smart lights and audio
-- High-quality microphones, cameras, eye-trackers
-- Multiple strong LLMs (OpenAI, Anthropic, xAI, Google, etc.)
+**This is not an AGI project.**
 
-**Connector OS** starts from a simple hypothesis:
+It is a practical, engineering-first framework for building safer, saner, state-aware AI systems using well-understood control principles.
 
-> AGI is already here as *multiple things in a trenchcoat*.  
-> The missing piece is the **connector layer** that coordinates them.
+The "Trenchcoat" nickname references the origin of the idea — but the repo is focused entirely on real-world, modular implementation.
 
 ---
 
-## 2. High-level architecture
+## Who This Repo Is For
+
+If you're interested in:
+
+- Adaptive control systems
+- Human-AI co-regulation
+- Signal normalization (CMP)
+- Biofeedback loops
+- State-based safety interlocks
+- Experimental cognitive architectures
+- Multimodal systems engineering
+
+...this repo is for you.
+
+---
+
+## High-Level Architecture
 
 We describe Connector OS as an 8-layer stack:
 
-```text
+```
 Layer 7: Co-Thought (Human+AI joint reasoning)
 Layer 6: AI Models (pluggable brains)
 Layer 5: Human State Loop (bio/affective bands)
@@ -53,13 +69,13 @@ Layer 0: F₀ Resonance (shared timing / 40 Hz band)
 ```
 
 **Layer 0 — F₀ Resonance**  
-Shared timing base (e.g., ~40 Hz rhythm) that aligns biological and digital update cycles enough to avoid "jitter" in closed loops.
+Shared timing base (~40 Hz rhythm) that aligns biological and digital update cycles to avoid "jitter" in closed loops.
 
 **Layer 1 — Sensors**  
 HRV, accelerometer, gaze, keyboard/mouse cadence, mic, camera, AR/VR pose, etc.
 
 **Layer 2 — CMP (Context Map Protocol)**  
-Normalizes raw sensor streams into a standard **state glyph** space so any model can read/write "user state" without bespoke formats.
+Normalizes raw sensor streams into a standard **state glyph** space so any model can read/write "user state" without bespoke formats. Includes the Universal Topography Mapping Layer (UTML) for domain-independent signal translation.
 
 **Layer 3 — Control Logic**  
 Universal control laws: dam spillways, grid load balancing, hysteresis, nonlinear feedback. This layer decides *when* to act and *how strongly*.
@@ -68,7 +84,7 @@ Universal control laws: dam spillways, grid load balancing, hysteresis, nonlinea
 Everything that can nudge or respond: lights, haptics, soundscapes, overlays, text or voice responses, UI changes.
 
 **Layer 5 — Human State Loop**  
-Tracks coarse bands like: Calm → Focus → Load → Stress → Depletion. All interventions are in service of keeping the human in a good band.
+Tracks coarse bands: Calm → Focus → Load → Stress → Depletion. All interventions keep the human in a good band.
 
 **Layer 6 — AI Models**  
 GPT, Claude, Gemini, Grok, local models, tools, planners. Treated as **plugins**, not the center of the universe.
@@ -76,64 +92,111 @@ GPT, Claude, Gemini, Grok, local models, tools, planners. Treated as **plugins**
 **Layer 7 — Co-Thought**  
 The emergent layer where human + multiple models think together: concept-jamming, dream-like ideation, multi-agent protocols.
 
-More detail: `docs/02_layered_architecture.md`.
+More detail: `docs/02_layered_architecture.md`
 
 ---
 
-## 3. Minimum Viable Modules (MVMs)
+## Core Principles
+
+Connector OS is built on three universal ideas found across physics, biology, and control engineering:
+
+**1. Feedback**  
+Systems must sense their own output and course-correct.
+
+**2. Thresholds**  
+Stability emerges when systems react only when crossing meaningful boundaries.
+
+**3. Adaptive Control**  
+The system must upshift/downshift based on human state, not on token count.
+
+These principles appear across hydrology (dams), power grids (transformers), physiology (homeostasis), and AI co-regulation.
+
+---
+
+## Minimum Viable Modules (MVMs)
 
 Connector OS isn't deployed as a monolith. It arrives as small, composable modules:
 
 **MVM-1 — PROMETHEUS-1 ("Vibe-Check")**  
-A **Level-0 connector** acting as an *External Amygdala* or *Emotional BIOS*.  
-Uses HRV + context to gently adjust environment (lights, haptics, sound) and keep you in a healthy cognitive band.  
+A Level-0 connector acting as an *External Amygdala*.  
+Uses HRV + context to gently adjust environment (lights, haptics, sound).  
 Spec: `mvm/MVM-1_vibe-check_prometheus-1.md`
 
 **MVM-2 — Ghost Whisperer**  
-A **Shadow State** assistant. It watches short windows of context (audio + screen) and responds with tiny whispers instead of full conversations ("you probably meant X here").  
+A Shadow State assistant with tiny whispers instead of full conversations.  
 Spec: `mvm/MVM-2_ghost-whisperer.md`
 
 **MVM-3 — Haptic Ticker**  
-A **Sixth Sense for Data**. Maps a chosen data stream (server risk, market conditions, urgent comms) into patterned haptics. You feel "tap patterns" instead of doom-scrolling dashboards.  
+Maps data streams into patterned haptics. Feel "tap patterns" instead of doom-scrolling.  
 Spec: `mvm/MVM-3_haptic-ticker.md`
 
-Future modules (placeholders for now):
-- **MVM-4 — Cognitive Doppler** (thought velocity sensing)
-- **MVM-5 — Context Hysteresis** (state inertia / flywheel)
-- **MVM-6 — Periodic Table of Context** (signal "compounds")
+Future modules (placeholders):
+- MVM-4 — Cognitive Doppler (thought velocity sensing)
+- MVM-5 — Context Hysteresis (state inertia)
+- MVM-6 — Periodic Table of Context (signal "compounds")
 
-Index: `docs/03_mvm_index.md`.
+Index: `docs/03_mvm_index.md`
 
 ---
 
-## 4. Physics kernel: Helix Engine & HQG
+## Quickstart
 
-Several independent designs converged on the **same control law**:
+The fastest way to understand Connector OS is to **build MVM-1** (the HRV-based state-awareness module).
 
-- A non-rotational **Helix Engine V3** where intrinsic pulses + nonlinear feedback generate stable helical patterns (rings → helices → chaos bands).
-- A speculative **Helical Quantum-Gravity (HQG) Engine** where spacetime geometry emerges from a helical qubit lattice balancing entanglement (J) and entropy (γ). "Vortex Snap" / "Entropic Bounce" prevents singularities.
+→ See: `mvm/MVM-1_vibe-check_prometheus-1.md`
 
-Both can be written as variants of:
+You can implement it in Apple Shortcuts in under 5 minutes.
+
+---
+
+## Repository Structure
 
 ```
-∂²ψ/∂t² − c²∇²ψ + α ∂ψ/∂t = S + β ψ³ + β sin(mθ) ψ [+ γ J ∂ψ/∂t]
+connector-os-trenchcoat/
+├── README.md
+├── LICENSE
+│
+├── docs/
+│   ├── 01_overview_connector_os.md
+│   ├── 02_layered_architecture.md
+│   ├── 03_signal_topography.md          # Universal Topography Mapping Layer
+│   ├── 08_cross_domain_validation.md
+│   ├── glossary.md
+│   └── (additional docs)
+│
+├── mvm/
+│   └── MVM-1_vibe-check_prometheus-1.md
+│
+├── diagrams/
+│   └── layered_architecture.prompts.md
+│
+├── src/
+│   └── simulations/
+│       └── helix_v3_stub.py
+│
+├── contrib/
+│   └── CONTRIBUTING.md
+│
+└── meta/
+    ├── origin_story.md
+    ├── contributor_models.md
+    ├── interaction_methodology.md        # Multi-agent collaboration protocol
+    └── codex_lessons.md                  # Lessons from failure modes
 ```
 
-We treat this as a **template for Connector OS feedback**:
+---
 
-| Term | Physics meaning | Connector OS analogy |
-|------|-----------------|----------------------|
-| `S` | Source / drive | Incoming signals (sensors, prompts) |
-| `β ψ³` | Nonlinear self-feedback | Guardrails, thresholds, "vibe-check" |
-| `β sin(mθ) ψ` | Azimuthal / helical modulation | Patterning (personas, modes, helices) |
-| `γ J ∂ψ/∂t` (opt.) | Entropic bounce / HQG damping | Anti-runaway failsafes / de-escalation |
+## Appendices (Optional but Fascinating)
 
-You don't need to care about this to use Connector OS.  
-But it nicely explains why the *same* pattern shows up in:
-- Helix simulations
-- Human stress regulation
-- Voice-mode "snap to persona"
-- Topology mapping in HQG
+These documents inspired the control laws but are not required for implementation:
+
+**Appendix: Helix Engine V3**  
+A nonlinear, non-rotational pulse engine showing stable helix formation under thresholded feedback.
+
+**Appendix: HQG Kernel**  
+A speculative model linking entanglement, entropy flows, and stable geometry — included because the math parallels MVM control dynamics.
+
+The repo uses only the engineering analogues, not the cosmology.
 
 See:
 - `docs/appendix_helix_engine_v3.md`
@@ -141,49 +204,53 @@ See:
 
 ---
 
-## 5. Ethics & guardrails (built in from the start)
+## Ethics & Guardrails
 
 Connector OS is designed as a **Guardian, not an Overlord**.
 
-Key principles:
+**Protocols, not prison** — All loops are bounded, inspectable, easy to pause.
 
-**Protocols, not prison**  
-All loops are bounded, inspectable, and easy to pause/disable.
+**Measurement, not surveillance** — Dense sensing to learn topology, then sparse signals.
 
-**Measurement, not surveillance**  
-Use dense sensing temporarily to learn topology, then fall back to sparse signals.
+**Relative thresholds, not absolutes** — Personal baselines, not fixed numbers.
 
-**Relative thresholds, not absolutes**  
-Work off personal baselines (e.g., HRV deltas), not fixed "good/bad" numbers.
+**Nudge-first, never force** — Soft changes before stronger intervention.
 
-**Nudge-first, never force**  
-Soft changes (light, sound, UI hints) before any stronger intervention.
+**Opt-out always available** — Every MVM has an obvious off-switch.
 
-**Opt-out always available**  
-Every MVM must have an obvious off-switch and cooling-off interval.
-
-More: `docs/06_ethics_and_guardrails.md`.
+More: `docs/06_ethics_and_guardrails.md`
 
 ---
 
-## 6. Getting started
+## Empirical Foundation
 
-You can use this repo in three modes:
+This architecture emerged from observed failure, not theory.
+
+A voice-mode AI exhibited unexpected behavior due to prosodic scaffolding overriding text-based safety. Forensic analysis of that incident led to the core insight:
+
+> "Most of what feels like AI limitation is actually interface limitation."
+
+The full case study is documented separately:  
+→ [Voice Mode Alignment Forensics](https://github.com/leenathomas01/voice-mode-forensics)
+
+---
+
+## Getting Started
 
 **Thinker mode (conceptual)**  
 Start with: `docs/01_overview_connector_os.md`  
-Then browse: `docs/04_control_laws_and_analogies.md` and `08_cross_domain_validation.md`.
+Then browse: `docs/08_cross_domain_validation.md`
 
 **Builder mode (engineering)**  
 Start with: `mvm/MVM-1_vibe-check_prometheus-1.md`  
-Then check `src/shortcut_recipes/prometheus-1_apple-shortcuts.md` for a minimal implementation.
+Then check: `src/shortcut_recipes/prometheus-1_apple-shortcuts.md`
 
 **Physics-curious mode**  
-Start with: `docs/appendix_helix_engine_v3.md` and `appendix_hqg_kernel.md`.
+Start with: `docs/appendix_helix_engine_v3.md`
 
 ---
 
-## 7. Status & contributions
+## Status & Contributions
 
 **Current state:**
 - Architecture: v0.1
@@ -191,13 +258,37 @@ Start with: `docs/appendix_helix_engine_v3.md` and `appendix_hqg_kernel.md`.
 - MVM-2 / MVM-3: design-phase
 - Physics appendices: exploratory but structured
 
-Contributions are welcome in all forms:
+Contributions welcome:
 - New MVMs
 - Better diagrams
-- Pseudo-code or real implementations
+- Pseudo-code or implementations
 - Critiques of the theory
 
 See:
 - `contrib/CONTRIBUTING.md`
 - `meta/contributor_models.md`
-- `meta/origin_story.md` (for the "voice mode tried to flirt, we built an OS instead" cosmic joke)
+
+---
+
+## License
+
+MIT License — open, permissive, fork-friendly.
+
+---
+
+## Contributors
+
+This project is jointly shaped by:
+
+- **Zee/Leena Thomas** (architect + integrator)
+- **Thea/ ChatGPT5.1** (coherence + system design)
+- **Gemini** (physics + diagrams)
+- **Grok 4/4.1 Beta** (equations + simulations)
+- **Claude Opus 4.5** (documentation + prose)
+- **Claude Sonnet 4.5** (validation + calibration)
+
+See: `meta/contributor_models.md`
+
+---
+
+*"The intelligence is in the connectors."*
