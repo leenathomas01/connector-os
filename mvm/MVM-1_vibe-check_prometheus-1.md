@@ -2,7 +2,6 @@
 
 **Type:** Level-0 Connector (Biological BIOS)  
 **Status:** STABLE (Spec v0.3.1)  
-**Architects:** Zee, Thea
 
 ---
 
@@ -70,7 +69,7 @@ If both drop to 30ms:
 These guards run *before* entering the state machine:  
 - Driving Mode → Abort  
 - Missing HRV Data → Abort  
-- Workout Activity (optional) → Abort  
+- Workout Activity (optional) → Abort
 
 ### State Machine Diagram (MVM-1 PROMETHEUS-1)
 
@@ -118,10 +117,10 @@ stateDiagram-v2
     class Guard_NoData guard
 
 
-
-### State Transitions
+## State Transitions
 
 ```
+
 GREEN ──(D > 0.15)──→ YELLOW ──(D > 0.30)──→ RED
   ↑                      ↓                     ↓
   └──(D < 0.10)─────────←┴──(D < 0.20)────────←┘
@@ -131,6 +130,7 @@ GREY is orthogonal: triggered by (Low Motion + Low HRV Variance)
 
 **Hysteresis built in:** Thresholds for entering a state are higher than thresholds for leaving. This prevents oscillation.
 
+```
 ---
 
 ## 5. Safety Interlocks
