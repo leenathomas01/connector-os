@@ -4,7 +4,8 @@
 > This experiment validates Layer 2 (CMP) and Layer 3 (Dam Logic) under real infra constraints.  
 > **Status:** Ready for Implementation  
 > **Origin:** Engineering validation prompt (Nov 2025)  
-> **Purpose:** Demonstrate how Connector OS maintains graceful degradation under bandwidth, latency, and queue pressure — where typical AI stacks fail catastrophically.
+> **Purpose:** Demonstrate how Connector OS maintains graceful degradation under bandwidth, latency, and queue pressure — where typical AI stacks fail catastrophically.  
+> See also: docs/02_layered_architecture.md for Layer 2/3 definitions.
 
 ---
 
@@ -226,6 +227,11 @@ This diagram perfectly illustrates the "Dam & Spillway" concept. Just like a hyd
 
 Connector OS should show smooth degradation curves rather than catastrophic breaks.
 
+**Expected Example:**  
+- 2000-byte prompt → 268-byte glyph  
+- Latency 600ms → async mode  
+- Queue depth 12 → low-priority drop
+
 ---
 
 ## 5. Contribution Path
@@ -242,6 +248,13 @@ Connector OS should show smooth degradation curves rather than catastrophic brea
 **Everyone**  
 - Star the repo  
 - Share results or extensions  
+
+### Quickstart
+To run EXP-01 locally:  
+1. Clone repo  
+2. Install Python 3.10+  
+3. Run `python experiments/EXP-01_bandwidth_constraint_test.py`  
+4. Observe mode switches, spillway behavior, and payload compression
 
 ---
 
