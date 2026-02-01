@@ -298,3 +298,19 @@ See: `meta/contributor_models.md`
 ---
 
 *"The intelligence is in the connectors."*
+
+---
+
+## Related Work
+
+This repository addresses the "Body Problem" for AI—how to give stateless models state-awareness and stability.
+
+**For a complete catalog of related research:**  
+📂 [AI Safety & Systems Architecture Research Index](https://github.com/leenathomas01/research-index)
+
+**Thematically related:**
+- [Voice Mode Forensics](https://github.com/leenathomas01/voice-mode-forensics) — Prosodic alignment failures that informed this architecture
+- [Embodied Agent Governance](https://github.com/leenathomas01/embodied-agent-governance) — Governance patterns for agents with bodies
+- [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) — Why state persistence requires governance
+
+---
