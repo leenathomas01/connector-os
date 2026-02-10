@@ -1,5 +1,8 @@
 # Layered Architecture Specification v0.1
 
+![Connector OS 8-Layer Architecture](assets/layered_architecture_stack.png)
+
+
 **Connector OS** is organized into an 8-layer stack.
 
 Unlike traditional AI architectures where the model (Layer 6) is the center of the universe, Connector OS treats the model as a pluggable component. The **intelligence** resides in the coordination between layers.
