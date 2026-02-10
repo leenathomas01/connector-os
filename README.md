@@ -2,6 +2,8 @@
 
 > **Tagline:** The intelligence is not (just) in the model. It's in the connectors.
 
+<img width="572" height="1024" alt="image" src="https://github.com/user-attachments/assets/24f6509a-8cfc-40e8-82e5-fdeb28bd37a5" />
+
 A modular human–AI architecture grounded in adaptive control, feedback loops, and threshold-based stability.
 
 ---
