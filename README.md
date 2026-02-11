@@ -94,8 +94,9 @@ GPT, Claude, Gemini, Grok, local models, tools, planners. Treated as **plugins**
 **Layer 7 — Co-Thought**  
 The emergent layer where human + multiple models think together: concept-jamming, dream-like ideation, multi-agent protocols.
 
-See: **[Interaction Methodology](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/interaction_methodology.md)** (Helical Stability Loop) for how these layers coordinate over time.
 More detail: `docs/02_layered_architecture.md`
+
+See: **[Interaction Methodology](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/interaction_methodology.md)** (Helical Stability Loop) for how these layers coordinate over time.
 
 See also: **[Cross-Domain Validation](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/08_cross_domain_validation.md)** - how the same control laws appear in dams, power grids, plants, brains, and networks.
 
