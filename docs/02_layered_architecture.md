@@ -69,7 +69,7 @@ Unlike traditional AI architectures where the model (Layer 6) is the center of t
 
 ### Layer 3: Control Logic (The Dam)
 
-![Safety Interlock – Layer 3 Control Logic](../assets/mvm1_conceptual_overview.png)
+![Safety Interlock – Layer 3 Control Logic](../assets/MVM1_safety_interlock.png)
 
 
 **Goal:** Manage flow, load, and safety.
