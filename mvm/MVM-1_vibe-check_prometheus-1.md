@@ -14,6 +14,7 @@
 *Biofeedback → Control → Environment.  
 A friendly view before the exact state machine below.*
 
+---
 
 **"An External Amygdala."**
 
