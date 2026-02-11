@@ -1,6 +1,6 @@
 # Layered Architecture Specification v0.1
 
-![Connector OS 8-Layer Architecture](assets/layered_architecture_stack.png)
+![Connector OS 8-Layer Architecture](../assets/layered_architecture_stack.png)
 
 
 **Connector OS** is organized into an 8-layer stack.
