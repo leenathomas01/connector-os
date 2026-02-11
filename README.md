@@ -98,8 +98,6 @@ More detail: `docs/02_layered_architecture.md`
 
 See: **[Interaction Methodology](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/interaction_methodology.md)** (Helical Stability Loop) for how these layers coordinate over time.
 
-See also: **[Cross-Domain Validation](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/08_cross_domain_validation.md)** - how the same control laws appear in dams, power grids, plants, brains, and networks.
-
 ---
 
 ## Core Principles
