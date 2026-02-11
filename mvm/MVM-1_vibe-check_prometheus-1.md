@@ -7,6 +7,14 @@
 
 ## 1. The Concept
 
+### Conceptual Overview
+
+![MVM-1 Conceptual Overview](../assets/mvm1_conceptual_overview.png)
+
+*Biofeedback → Control → Environment.  
+A friendly view before the exact state machine below.*
+
+
 **"An External Amygdala."**
 
 When you are stressed, your internal amygdala hijacks your brain. MVM-1 acts as an external regulator. It monitors your biological energy (via HRV) and gently modulates your environment to restore balance.
