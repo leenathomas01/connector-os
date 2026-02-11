@@ -96,6 +96,8 @@ The emergent layer where human + multiple models think together: concept-jamming
 
 More detail: `docs/02_layered_architecture.md`
 
+See also: **[Cross-Domain Validation](https://github.com/leenathomas01/connector-os-trenchcoat/blob/main/docs/08_cross_domain_validation.md)** - how the same control laws appear in dams, power grids, plants, brains, and networks.
+
 ---
 
 ## Core Principles
