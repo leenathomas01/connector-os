@@ -8,6 +8,8 @@ This file lays out those domains and what each one validates.
 
 ## 1. Universal pattern
 
+![Universal Control Pattern](../assets/universal_control_pattern.png)
+
 Across all systems we looked at, the same pattern keeps appearing:
 
 > Systems do not change state because of absolute values.  
