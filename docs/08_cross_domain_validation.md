@@ -8,6 +8,8 @@ This file lays out those domains and what each one validates.
 
 ## 1. Universal pattern
 
+The diagram below shows how the same structural pattern appears across multiple domains:
+
 ![Universal Control Pattern](../assets/universal_control_pattern.png)
 
 Across all systems we looked at, the same pattern keeps appearing:
