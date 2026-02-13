@@ -1,5 +1,37 @@
 ---
 
+## 4. Thresholds & Controlled Release (The Dam Analogy)
+
+Before discussing adaptive reliability, it helps to understand the core control intuition behind Layer 3.
+
+Connector OS does not operate on absolute values.
+It operates on **thresholds and controlled release.**
+
+The analogy is physical infrastructure:
+
+![Layer 3 Dam Analogy](../assets/dam_spillway_analogy.png)
+
+### Structural Mapping
+
+| Physical Dam | Connector OS |
+|--------------|--------------|
+| Water Pressure | Cognitive Load / Ambiguity |
+| Spillway Gate | Threshold Detector |
+| Controlled Release | Response Simplification / Clarification |
+| Catastrophic Failure | Hallucination / Instability |
+
+If pressure stays below threshold → nothing changes.  
+If pressure crosses threshold → controlled release.
+
+This prevents rupture.
+
+Layer 3 applies the same logic to cognitive load and model ambiguity.
+
+The goal is not suppression.  
+The goal is **stability under rising load.**
+
+---
+
 ## 5. Dynamic Reliability (The Governor)
 
 In a production system, we cannot simply flip a switch from "Hard Rules" to "AI Guessing." That is unsafe. We need a mechanism to dynamically adjust trust based on real-time conditions.
@@ -31,10 +63,15 @@ The Governor monitors three risk factors (normalized 0.0 to 1.0):
 ### 5.3 Hysteresis (Smoothing)
 We do not want the system snapping between modes every millisecond. We apply a **Low-Pass Filter** to smooth the transition.
 
-![Image of magnetic hysteresis loop](https://www.nde-ed.org/Physics/Magnetism/Graphics/BHCurve.gif)
+![HRV State Hysteresis Diagram](../assets/hrv_hysteresis_diagram.png)
 
-* **Concept:** Just as magnetization lags behind the magnetic field, our Trust Score lags behind the instantaneous error.
-* **Result:** The system "slides" into safety rather than jerking. It maintains context inertia.
+* **Concept:** Entry and exit thresholds are intentionally different.
+* **Result:** The system does not flip states instantly when signals hover near a boundary.
+
+This creates stability bands.
+
+The rising path (increasing deviation) and falling path (decreasing deviation) follow different thresholds, preventing rapid oscillation between states.
+
 
 ### 5.4 Production Protocols
 
