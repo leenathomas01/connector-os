@@ -1,5 +1,3 @@
----
-
 ## 4. Thresholds & Controlled Release (The Dam Analogy)
 
 Before discussing adaptive reliability, it helps to understand the core control intuition behind Layer 3.
