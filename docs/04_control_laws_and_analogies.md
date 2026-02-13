@@ -40,7 +40,8 @@ We call this **"The Governor."**
 
 We define a dynamic parameter $\alpha$ (Alpha) that controls the "Safety Bias" of the system.
 
-$$\text{Output} = (\alpha \times \text{Rule\_Action}) + ((1 - \alpha) \times \text{Learned\_Action})$$
+$$\text{Output} = (\alpha A_{\text{rule}}) + ((1 - \alpha) A_{\text{learned}})$$
+
 
 * **$\alpha = 1.0$ (Hard Rules):** The system ignores the AI and follows the safety script (e.g., "If Driving, Block All").
 * **$\alpha = 0.0$ (Fully Adaptive):** The system relies entirely on the Learned Topology (e.g., "Zee looks stressed, initiate Zen Mode").
