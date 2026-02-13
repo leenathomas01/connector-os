@@ -37,6 +37,7 @@ In a production system, we cannot simply flip a switch from "Hard Rules" to "AI 
 We call this **"The Governor."**
 
 ### 5.1 The Alpha ($\alpha$) Safety Bias
+
 We define a dynamic parameter $\alpha$ (Alpha) that controls the "Safety Bias" of the system.
 
 $$\text{Output} = (\alpha \times \text{Rule\_Action}) + ((1 - \alpha) \times \text{Learned\_Action})$$
