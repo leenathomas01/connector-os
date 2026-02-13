@@ -8,6 +8,9 @@
 > See also: docs/02_layered_architecture.md for Layer 2/3 definitions.
 
 ---
+![Narrow Pipe Problem](../assets/narrow_pipe_problem.png)
+
+---
 
 ## 1. Hypothesis
 
