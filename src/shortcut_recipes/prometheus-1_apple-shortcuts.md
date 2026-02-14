@@ -9,7 +9,8 @@
 
 ## 1. Concept
 This recipe builds a **closed-loop stress regulator** using tools you already own.
-It does not use "AI" to talk to you. It uses simple math to check your biological energy (Heart Rate Variability) and modulates your environment to match your state.
+This module does not require a language model. It demonstrates regulation using deterministic threshold logic.
+It uses simple math to check your biological energy (Heart Rate Variability) and modulates your environment to match your state.
 
 **Why HRV?**
 Heart Rate Variability is the cleanest non-invasive proxy for cognitive load, autonomic balance, and recovery. When you are stressed, HRV drops.
