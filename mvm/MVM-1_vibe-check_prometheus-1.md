@@ -347,4 +347,11 @@ If the lights turn Amber and you think:
 
 *MVM-1 is the first muscle of the trenchcoat. Simple. Local. Human-centered.*
 
+---
+
+**Build it on iOS (no code):**
+`src/shortcut_recipes/prometheus-1_apple-shortcuts.md`
+
+---
+
 *Start here. Everything else builds on this.*
