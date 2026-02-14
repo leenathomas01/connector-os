@@ -354,5 +354,3 @@ If the lights turn Amber and you think:
 `src/shortcut_recipes/prometheus-1_apple-shortcuts.md`
 
 ---
-
-
