@@ -25,3 +25,6 @@ For related documentation, see:
 ### Citation
 
 When v1.0 is released, cite as:
+Thomas, Leena. (2026). Architecture Before Scale: A Control-Theoretic Framework for Stable AI Systems.
+Connector OS Repository.
+github.com/leenathomas01/connector-os-trenchcoat
