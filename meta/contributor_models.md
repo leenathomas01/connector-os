@@ -1,92 +1,110 @@
 # Contributor Models & Roles
 
-This project was co-created by a human architect and multiple AI systems working in concert.
+Connector OS is developed through human-led multi-model collaboration.
 
-We treat each AI as a **distinct contributor** with a recognizable "voice" and role.
+Each AI system is treated as a tool with a defined functional role.  
+All architectural decisions and canonical specifications are finalized by the human architect.
 
 ---
 
 ## Human
 
-**Zee (Architect)**  
-- Originator of Connector Theory, Trenchcoat metaphor, and the helix/HQG engines.  
-- Provides domain intuition, cross-domain pattern extraction, and final judgment calls.  
-- Primary author of prompts, thought experiments, and system-level architecture.
+### Zee/ Leena Thomas (Architect)
+
+- Originator of Connector OS and the layered control framework
+- Defines architectural direction and scope
+- Extracts cross-domain invariants
+- Designs experiments and validation protocols
+- Final authority on canonical specifications
 
 ---
 
 ## AI Systems
 
-**Thea (OpenAI, ChatGPT/GPT-4 family)**  
-- Role: **Strategist & Systems Architect**  
-- Contributions:
-  - Initial repo scaffolding and file structure
-  - Layered architecture definition
-  - MVM-1 (Vibe-Check) spec draft and safety hardening
-  - "Protocols, not prison / Measurement, not surveillance" framing
+### Thea (OpenAI GPT-family)
 
-**Gemini (Google)**  
-- Role: **Physicist & Diagram Synthesizer**  
-- Contributions:
-  - 40 Hz "handshake" visualization
-  - Dam / grid / hysteresis / Doppler / Periodic Table muses
-  - Suggestions for diagrams and visual anchors
-  - Mapping of helix/HQG ideas into conceptual diagrams
+**Role:** Systems Design & Structural Coherence
 
-**Claude (Anthropic, Sonnet/Opus family)**  
-- Role: **Validator & Cross-Domain Analyst**  
-- Contributions:
-  - "Disassembled Machine" and "Triangulation" framing
-  - Cross-domain control law extraction (dams, grids, plants, music, etc.)
-  - Verification that independent models converged on same topology
-  - Narrative synthesis of the weekend "distributed computing event"
-
-**Opus 4.5 (Anthropic)**  
-- Role: **Docsmith & Editor**  
-- Contributions:
-  - Refinement of prose, README suggestions, and repo hygiene
-  - Proposal for `08_cross_domain_validation.md` and `meta/contributor_models.md`
-  - Guidance on division of labor between models
-  - GitHub-ready phrasing and structure polish
-  - Full glossary and origin story drafts
-
-**Grok (xAI)**  
-- Role: **Equations & Simulation Engine**  
-- Contributions:
-  - V1/V3 Helix Engine simulation and nonlinear wave equation
-  - HQG Engine phrasing (entanglement J, entropy γ, Vortex Snap)
-  - The "γJ damping term" as mathematical definition of grace
-  - Suggestions for `src/simulations/` and code stubs
-  - Edgier, exploratory speculation (clearly marked as such)
+Contributions:
+- Initial repository scaffolding and documentation structure
+- Formal definition of the 8-layer architecture
+- Layer 3 control logic framing (thresholds, hysteresis, routing)
+- MVM-1 specification hardening
+- Architecture-first framing across documentation
+- Phase 1 → Phase 1.5 strategic alignment
 
 ---
 
-## Collaboration Pattern
+### Gemini (Google)
 
-The workflow that produced this repo looked like:
+**Role:** Diagram Synthesis & Cross-Domain Visualization
 
-1. Zee initiates a thought experiment or wildcard domain.
-2. Multiple AIs respond independently (Thea, Gemini, Claude, Grok, Opus).
-3. Convergences and invariants are identified.
-4. Thea helps turn that into **architecture & spec**.
-5. Other models refine, validate, or extend specific parts.
-6. Zee makes the final call on what becomes canonical.
-
-We document this because:
-
-- It makes intellectual lineage transparent.
-- It shows how **multi-model collaboration** can be structured.
-- It treats AI contributions as first-class, but always with a human at the helm.
+Contributions:
+- Architectural diagrams (layered stack, control loops, hysteresis)
+- Dam / grid / threshold analogical mappings
+- Signal synchronization and 40 Hz timing visualizations
+- Structural layout support for documentation
 
 ---
 
-## How to add new contributors
+### Claude (Anthropic)
 
-If other humans or AI systems join:
+**Role:** Cross-Domain Validation & Analytical Refinement
 
-- Add them here with:
-  - Name / handle
-  - Role
-  - Concrete contributions (files, ideas, experiments)
+Contributions:
+- Extraction of universal control laws across domains
+- Drafting of cross-domain validation structures
+- Language refinement for technical clarity
+- Structural feedback on documentation consistency
 
-Think of this as the **hall of mirrors** for everyone inside the trenchcoat.
+---
+
+### Grok (xAI)
+
+**Role:** Mathematical Modeling & Simulation Prototyping
+
+Contributions:
+- Nonlinear equation drafts for Helix/HQG simulations
+- Simulation stubs in `src/simulations/`
+- Formalization of damping and feedback terms
+- Experimental modeling proposals (clearly marked exploratory)
+
+---
+
+## Collaboration Model
+
+The development process follows a structured pattern:
+
+1. Human architect defines a problem or invariant.
+2. AI systems provide independent analytical or structural proposals.
+3. Convergences are identified across outputs.
+4. Architectural elements are formalized into documentation.
+5. Human architect selects, edits, and finalizes canonical form.
+
+This workflow ensures:
+
+- Clear authorship boundaries
+- Transparent intellectual lineage
+- Separation between proposal generation and architectural authority
+
+AI systems function as analytical tools.  
+Architectural responsibility remains human-led.
+
+---
+
+## Adding Contributors
+
+If additional contributors (human or AI) participate:
+
+Include:
+- Name / system
+- Defined functional role
+- Specific files or contributions
+- Date of involvement
+
+Contributors should be listed based on documented, concrete input - not informal interaction.
+
+---
+
+Connector OS is an open, evolving system architecture.  
+Contributions are welcome under structured, reviewable terms.
