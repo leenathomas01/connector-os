@@ -346,6 +346,7 @@ If the lights turn Amber and you think:
 ---
 
 *MVM-1 is the first muscle of the trenchcoat. Simple. Local. Human-centered.*
+*Start here. Everything else builds on this.*
 
 ---
 
@@ -354,4 +355,4 @@ If the lights turn Amber and you think:
 
 ---
 
-*Start here. Everything else builds on this.*
+
