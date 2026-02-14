@@ -234,7 +234,8 @@ Models can be swapped without altering the regulatory architecture.
 - Control mappings: `docs/04_control_laws_and_analogies.md`
 - Signal translation: `docs/03_signal_topography.md`
 - Ethics and guardrails: `docs/06_ethics_and_guardrails.md`
-- Minimum Viable Modules: `docs/03_mvm_index.md`
+- Minimum Viable Modules: `mvm/MVM-1_vibe-check_prometheus-1.md`
+
 
 ---
 
