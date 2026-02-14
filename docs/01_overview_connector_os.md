@@ -235,7 +235,8 @@ Models can be swapped without altering the regulatory architecture.
 - Signal translation: `docs/03_signal_topography.md`
 - Ethics and guardrails: `docs/06_ethics_and_guardrails.md`
 - Minimum Viable Modules: `mvm/MVM-1_vibe-check_prometheus-1.md`
-
+**Build it on iOS (no code):**
+`src/shortcut_recipes/prometheus-1_apple-shortcuts.md`
 
 ---
 
