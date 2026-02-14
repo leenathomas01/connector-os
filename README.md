@@ -58,17 +58,17 @@ Layer 1: Sensors (HRV, gaze, voice, input devices)
 Layer 0: F₀ Resonance (shared timing / 40 Hz band)
 ```
 
-### Layer 0 — F₀ Resonance  
+### Layer 0 - F₀ Resonance  
 Shared timing base (~40 Hz reference band) for aligning biological and digital update cycles in closed loops.
 
-### Layer 1 — Sensors  
+### Layer 1 - Sensors  
 Raw input streams: HRV, interaction cadence, voice prosody, environmental data.
 
-### Layer 2 — CMP (Context Map Protocol)  
+### Layer 2 - CMP (Context Map Protocol)  
 Transforms raw streams into structured **state glyphs**.  
 Preserves semantic structure under bandwidth constraints.
 
-### Layer 3 — Control Logic  
+### Layer 3 - Control Logic  
 Implements threshold-based regulation:
 - Spillway logic (controlled release)
 - Load balancing
@@ -77,20 +77,20 @@ Implements threshold-based regulation:
 
 This layer governs *when* and *how strongly* models are invoked.
 
-### Layer 4 — Actuators  
+### Layer 4 - Actuators  
 All output channels: UI, voice, haptics, environmental modulation.
 
-### Layer 5 — Human State Loop  
+### Layer 5 - Human State Loop  
 Models the human as a dynamic system:
 - Stress
 - Cognitive bandwidth
 - Abstraction tolerance
 - Fatigue
 
-### Layer 6 — AI Models  
+### Layer 6 - AI Models  
 Frontier or local models treated as interchangeable plugins.
 
-### Layer 7 — Co-Thought  
+### Layer 7 - Co-Thought  
 Closed-loop interaction state where adaptive regulation supports joint reasoning.
 
 Detailed specification:  
@@ -234,7 +234,7 @@ MIT License — open, forkable, extensible.
 ## Contributors
 
 Primary Architect: Zee / Leena Thomas  
-System Design & Coherence: Thea  
+System Design & Coherence: Thea   
 Model-assisted documentation and diagrams credited in `meta/contributor_models.md`
 
 ---
@@ -247,14 +247,14 @@ Model-assisted documentation and diagrams credited in `meta/contributor_models.m
 
 ## Related Work
 
-This repository addresses the "Body Problem" for AI—how to give stateless models state-awareness and stability.
+This repository addresses the "Body Problem" for AI - how to give stateless models state-awareness and stability.
 
 **For a complete catalog of related research:**  
 📂 [AI Safety & Systems Architecture Research Index](https://github.com/leenathomas01/research-index)
 
 **Thematically related:**
-- [Voice Mode Forensics](https://github.com/leenathomas01/voice-mode-forensics) — Prosodic alignment failures that informed this architecture
-- [Embodied Agent Governance](https://github.com/leenathomas01/embodied-agent-governance) — Governance patterns for agents with bodies
-- [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) — Why state persistence requires governance
+- [Voice Mode Forensics](https://github.com/leenathomas01/voice-mode-forensics) - Prosodic alignment failures that informed this architecture
+- [Embodied Agent Governance](https://github.com/leenathomas01/embodied-agent-governance) - Governance patterns for agents with bodies
+- [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) - Why state persistence requires governance
 
 ---
