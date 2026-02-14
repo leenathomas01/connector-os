@@ -142,7 +142,28 @@ Spec:
 - MVM-3 — Haptic Ticker  
 - MVM-4+ — Experimental state-aware modules
 
-Index: `docs/03_mvm_index.md`
+---
+
+## Quickstart: Build a Regulated Loop in 15 Minutes
+
+If you want to see Connector OS principles in practice immediately:
+
+### iOS / Apple Watch (No Code)
+
+`src/shortcut_recipes/prometheus-1_apple-shortcuts.md`
+
+This implementation demonstrates:
+
+- Layer 1 — Sensor input (HRV via HealthKit)
+- Layer 2 — State normalization (baseline deviation)
+- Layer 3 — Threshold logic (15% / 30% bands)
+- Layer 4 — Actuation (lights, haptics, UI)
+- Layer 5 — Closed-loop human state regulation
+
+It does **not** require a language model.  
+It demonstrates deterministic control logic under real physiological input.
+
+This is the minimal reproducible example of the architecture.
 
 ---
 
