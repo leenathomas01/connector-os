@@ -165,6 +165,25 @@ It demonstrates deterministic control logic under real physiological input.
 
 This is the minimal reproducible example of the architecture.
 
+
+## The Whitepaper
+
+For a formal systems architecture treatment, see:
+
+**Architecture Before Scale: A Control-Theoretic Framework for Stable AI Systems**
+
+- Specification: `whitepaper/Architecture_Before_Scale_v0.1-draft.md`
+- Status: Structure locked (v1.0 planned Week 4, February 2026)
+
+This paper presents the theoretical backbone of Connector OS:
+
+- Why architecture determines stability
+- How universal control principles apply to AI
+- Empirical validation via stress testing
+- Practical implications for system design
+
+For more, see `docs/02_layered_architecture.md`
+
 ---
 
 ## Experiments & Validation
