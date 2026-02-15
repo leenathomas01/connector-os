@@ -1,8 +1,7 @@
 # Universal Topography Mapping Layer (UTML)
-
-![UTML Translation Pipeline](../assets/utml_translation_pipeline.png)
-
 > A domain-independent, deterministic signal translation framework for Connector OS
+> 
+![UTML Translation Pipeline](../assets/utml_translation_pipeline.png)
 
 ---
 
