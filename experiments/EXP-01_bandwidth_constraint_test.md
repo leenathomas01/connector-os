@@ -230,7 +230,7 @@ This diagram perfectly illustrates the "Dam & Spillway" concept. Just like a hyd
 | Latency spike     | Frozen UX, frustration      | Mode-switch to async, stable UX |
 | Queue flood       | Timeouts, collapse          | Spillway + batching, graceful loss |
 
-Connector OS should show smooth degradation curves rather than catastrophic breaks.
+Connector OS is designed to produce smoother degradation curves relative to naive stacks under identical constraints.
 
 **Expected Example:**  
 - 2000-byte prompt → 268-byte glyph  
