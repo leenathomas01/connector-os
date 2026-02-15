@@ -191,53 +191,49 @@ No model inference is performed.
 
 ## 5. Worked Examples
 
-### 5.1 HRV → Vibe Check (MVM-1)
+### 5.1 HRV → MVM-1
 
 ```
-Raw HRV → normalized → oscillation amplitude →
-if below threshold → stability drop event
+Raw HRV → normalization → amplitude + gradient → threshold detection
 ```
 
 **Mapping:**
 
-- Gradient ↑ = sympathetic activation
-- Amplitude ↓ = fatigue
-- Hysteresis ↑ = recovery difficulty
+- Gradient increase → sympathetic activation
+- Amplitude decrease → fatigue
+- Hysteresis increase → recovery resistance
 
-**Layer 3 triggers:**
+**Layer 3 response:**
 
-- Light dimming
+- Light modulation
 - Tone shift
-- Pause nudges
+- Structured output
 
 ---
 
 ### 5.2 Rain Radar → Pivot Detection
 
 ```
-Raw rainfall maps → spatial gradient → derivative →
-if ∂²x/∂t² positive spike → weather pivot event
+Rain intensity → spatial gradient → curvature spike → pivot event
 ```
 
 **Mapping:**
 
-- Sharp gradient = sudden load
-- Oscillatory band = intermittent precipitation
-- Saturation = flooding risk
+- High curvature → rapid change
+- Oscillation band → intermittent precipitation
+- Saturation → flooding risk
 
-**Layer 3 triggers:**
+**Layer 3 response:**
 
-- Prediction pivot protocol
-- State reshaping
+- State transition protocol
 - Dampened response band
 
 ---
 
-### 5.3 Prosody → State Alignment
+### 5.3 Prosody → Conversational Synchrony
 
 ```
-Prosody → waveform envelope → spectral coherence →
-if coherence locks → entrainment event
+Prosodic waveform → amplitude envelope → spectral coherence
 ```
 
 **Mapping:**
