@@ -15,7 +15,9 @@
 ## 1. Hypothesis
 
 **The Straw Hypothesis**  
-Most AI stacks break not because the model is weak, but because the pipe is narrow.  
+
+Many observed AI system failures under real deployment conditions may arise from infrastructure constraints rather than model capability.
+
 If we:  
 - shrink bandwidth → payload cannot carry full state  
 - increase latency → presence illusion collapses  
