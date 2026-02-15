@@ -263,8 +263,13 @@ To run EXP-01 locally:
 
 ## 6. Why This Matters
 
-This experiment reframes the AGI debate:  
-It’s not “Can the model think?”  
-It’s “Can the wiring carry the thought?”  
+This experiment reframes failure attribution in AI systems:
+
+The question is not only:
+"Can the model reason?"
+
+But also:
+"Does the system architecture preserve reasoning under constraint?"
+ 
 
 Connector OS is our proposal for a wiring-first architecture.  
