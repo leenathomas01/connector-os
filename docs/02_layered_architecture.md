@@ -101,6 +101,10 @@ Unlike traditional AI architectures where the model (Layer 6) is the center of t
 
 ### Layer 5: Human State Loop (The User)
 
+![Closed-Loop Human State Control](../diagrams/control_loop_human_state.png)
+
+*Figure: Stability emerges when human state becomes a regulated system variable.*
+
 **Goal:** Model the human as a dynamic system, not a static user.
 
 **Bands:**
