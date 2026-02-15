@@ -238,15 +238,15 @@ Prosodic waveform → amplitude envelope → spectral coherence
 
 **Mapping:**
 
-- Amplitude decay = uncertainty
-- Pitch gradient = cognitive load
-- Phase alignment = co-thought onset
+- Amplitude decay → uncertainty
+- Pitch gradient → cognitive load
+- Phase alignment → high conversational synchrony
 
-**Layer 3 triggers:**
+**Layer 3 response:**
 
-- Matching cadence
-- Adjust inference weight
-- Stabilize persona
+- Adjust cadence
+- Modify response density
+- Regulate abstraction depth
 
 ---
 
