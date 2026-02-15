@@ -158,3 +158,5 @@ Layer 3 enforces stability through:
 - Circuit breaker recovery
 
 These mechanisms mirror infrastructure regulation patterns and ensure that learned behavior never overrides safety boundaries under uncertainty.
+
+---
