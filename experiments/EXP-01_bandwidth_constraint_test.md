@@ -253,8 +253,8 @@ Baseline measurements should be taken using an unregulated single-model stack un
 - Run cross-model comparisons  
 
 **Everyone**  
-- Star the repo  
-- Share results or extensions  
+- If this architecture proves useful in practice, feedback is welcome
+- Feel free to share results or extensions  
 
 ### Quickstart
 To run EXP-01 locally:  
