@@ -130,20 +130,22 @@ Unitless scaling across domains:
 x_norm(t) = (x(t) - μ) / σ
 ```
 
-### 4.3 Step 3 — Topography Extraction
 
-Compute all shape features:
+### 4.3 Feature Extraction
 
-- ∂x/∂t (first derivative)
-- ∂²x/∂t² (second derivative)
-- FFT or wavelet band
+Compute structural properties:
+
+- dx/dt
+- d²x/dt²
+- Spectral band (FFT or wavelet)
 - Threshold crossings
-- Hysteresis loops
-- Damping estimates
+- Hysteresis delta
+- Variance decay
+- Saturation detection
 
-### 4.4 Step 4 — Feature Vector
+### 4.4 Topography Feature Vector
 
-All signals become a universal structure:
+All signals are converted into:
 
 ```
 T = {
@@ -159,22 +161,31 @@ T = {
   stability_index
 }
 ```
+---
 
-### 4.5 Step 5 — Deliver to Layer 3
+### 4.5 Deterministic Extraction Example
 
-Layer 3 receives:
+```python
+def utml_extract(x):
+    gradient = derivative(x)
+    curvature = second_derivative(x)
+    amp, freq = dominant_frequency_band(x)
+    hysteresis = hysteresis_delta(x)
+    stability_index = variance_decay(x)
+    saturation = check_saturation(x)
 
+    return {
+        "gradient": gradient,
+        "curvature": curvature,
+        "amplitude": amp,
+        "frequency": freq,
+        "hysteresis": hysteresis,
+        "saturation_flag": saturation,
+        "stability_index": stability_index
+    }
 ```
-Control_Input = Topography_Feature_Vector
-```
-
-This ensures Connector OS reacts the same way whether its input came from:
-
-- A watch
-- A mic
-- A satellite feed
-- A weather API
-- A GPU telemetry panel
+No learning occurs at this layer.
+No model inference is performed.
 
 ---
 
