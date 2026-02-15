@@ -250,24 +250,23 @@ Prosodic waveform → amplitude envelope → spectral coherence
 
 ---
 
-### 5.4 Traffic Flow → Load Balancing
+### 5.4 Traffic Flow → Load Regulation
 
 ```
-Traffic density → gradient map → threshold crossings →
-if congestion threshold crossed → rerouting event
+Traffic density → gradient → threshold crossing → congestion event
 ```
 
 **Mapping:**
 
-- Flow rate = throughput
-- Gradient = acceleration/deceleration
-- Saturation = gridlock
+- Flow rate → throughput
+- Gradient → acceleration/deceleration
+- Saturation → gridlock
 
-**Layer 3 triggers:**
+**Layer 3 response:**
 
-- Load redistribution
-- Alternative path activation
-- Graceful degradation
+- Rerouting
+- Spillway activation
+- Priority redistribution
 
 ---
 
@@ -277,71 +276,63 @@ if congestion threshold crossed → rerouting event
 
 Connector OS becomes sensor-agnostic.
 
-### 6.2 Plug-and-Play
+### 6.2 Feature-Level Fusion
 
-Any new domain can be added without redesigning the system.
+Multi-modal fusion occurs at the feature-vector level (T), not at the raw signal level.
 
-### 6.3 Safety
+This ensures consistent control behavior across modalities.
 
-Thresholds stabilize before overload regardless of source domain.
+### 6.3 Architectural Separation
 
-### 6.4 Multi-Modal Fusion
+UTML enables strict separation:
 
-Different domains converge into the same shape semantics.
+- Layer 2: deterministic structural translation
+- Layer 3: regulatory logic
+- Layer 6: model inference
 
-### 6.5 Cross-Domain Verification
+### 6.4 Cross-Domain Consistency
 
-Domain A can validate domain B if their topographies match form.
-
-This is why dams, batteries, weather, prosody, HRV, and neural oscillations all map cleanly onto the same control philosophy.
+Because structural features are shared across domains, control laws apply consistently.
 
 ---
 
 ## 7. Integration with Connector OS
 
-| Layer | Role in UTML |
+| Layer | Role |
 |-------|--------------|
-| Layer 0 | Resonance signature provides global timing |
-| Layer 1 | Collects diverse sensor streams |
-| **Layer 2 (CMP)** | **Applies UTML translation** |
-| Layer 3 | Uses topography for decision logic |
-| Layers 4-7 | Actuators, state loops, AI modulation, co-thought |
+| Layer 0 | Global timing alignment |
+| Layer 1 | Raw signal acquisition |
+| **Layer 2 (CMP)** | **UTML structural translation** |
+| Layer 3 | Threshold-based regulation |
+| Layers 4-7 |Actuation, state loops, model modulation |
 
-**UTML sits inside Layer 2** but influences every higher layer.
+**UTML resides in Layer 2**
 
 ---
 
 ## 8. Relationship to Cross-Domain Validation
 
-The Cross-Domain Validation Table (`docs/08_cross_domain_validation.md`) documents *that* the same patterns appear across domains.
+`docs/08_cross_domain_validation.md`documents structural similarity across domains.
 
-UTML explains *why*: because we're extracting the same topography features regardless of source.
+UTML provides the mechanism explaining that similarity:
 
-The validation table is the empirical evidence.
-
-UTML is the mechanism.
+all domains are translated into identical topography vectors.
 
 ---
 
 ## 9. Summary
 
-UTML reframes Connector OS as a **universal, cross-domain control architecture**.
 
-Instead of treating each sensor type separately, UTML:
+UTML provides deterministic, domain-independent structural translation.
 
-- **Abstracts** — removes domain-specific labels
-- **Translates** — converts to universal shape features
-- **Unifies** — enables consistent control logic
+It:
 
-This makes Connector OS:
+- Abstracts domain labels
+- Extracts universal signal features
+- Produces normalized control vectors
+- Enables stable, cross-domain regulation
 
-- Flexible (any input works)
-- Robust (same logic everywhere)
-- Scalable (add domains without redesign)
-- Future-proof (unknown domains will still have gradients and thresholds)
-- Scientifically grounded (based on control theory, not heuristics)
-
-**This completes the theoretical backbone of the architecture.**
+Connector OS therefore scales by adding new domains without redesigning control logic.
 
 ---
 
@@ -354,4 +345,3 @@ This makes Connector OS:
 
 ---
 
-*"Domains are skins. Topology is truth."*
