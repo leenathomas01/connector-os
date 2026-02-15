@@ -1,6 +1,8 @@
 # Universal Topography Mapping Layer (UTML)
 
-> A domain-independent signal translation framework for Connector OS
+![UTML Translation Pipeline](../assets/utml_translation_pipeline.png)
+
+> A domain-independent, deterministic signal translation framework for Connector OS
 
 ---
 
@@ -18,14 +20,14 @@ Whether the incoming signal is:
 - Accelerometer drift (physics)
 - Temperature gradient (thermodynamics)
 
-...what actually matters is the **structure**, not the domain.
+What matters is not the domain label — it is the structural behavior of the signal.
 
-The Universal Topography Mapping Layer (UTML) converts any raw input into a standardized **shape language** that Connector OS can act on.
+The Universal Topography Mapping Layer (UTML) converts raw input streams into a standardized **topography feature vector** that Connector OS can regulate against.
 
 This document defines:
 
-- The universal features extracted from any domain
-- The translation rules
+- The universal structural features extracted from any domain
+- The deterministic translation pipeline
 - Worked examples
 - How UTML integrates with CMP (Layer 2) and Control Logic (Layer 3)
 
@@ -33,42 +35,39 @@ This document defines:
 
 ## 2. Core Insight
 
-**Domains differ. Signals don't.**
+Domains differ. Signal structure does not.
 
-Every real-world system exhibits:
+Every dynamic system exhibits measurable structural properties:
 
 - Gradients
-- Thresholds
+- Inflection points
 - Oscillations
+- Threshold crossings
 - Hysteresis
 - Saturation
 - Noise floors
-- Rebound
 - Stability bands
-- Mode shifts
+- Mode transitions
 
-UTML captures these patterns and expresses them in a universal form.
+UTML extracts these properties independent of domain semantics.
 
-Connector OS then uses these features for:
+UTML performs **deterministic signal translation**.  
+It does not perform inference, prediction, or classification.
 
-- Pivot detection
-- Feedback stabilization
-- Safety interlocks
-- Vibe-based modulation
-- Co-thought alignment
+Its sole role is structural normalization.
 
 ---
 
-## 3. The Universal Shape Language
+## 3. Canonical Feature Set
 
-These are the canonical features UTML extracts from any input stream:
+UTML extracts the following universal features from any time-series or spatial stream.
 
 ### 3.1 Gradient Map
 
-- **First derivative:** slope
-- **Second derivative:** acceleration
-- **Zero-crossings:** stalling / reversal
-- **Sharp changes:** "pivot events"
+- First derivative (slope)
+- Second derivative (curvature)
+- Zero-crossings
+- Pivot events (rapid slope change)
 
 ### 3.2 Oscillation Profile
 
@@ -77,46 +76,47 @@ These are the canonical features UTML extracts from any input stream:
 - Phase
 - Coherence
 - Damping coefficient
-- Mode transitions (steady → ringing → chaos)
+- Mode transitions (steady → ringing → chaotic)
 
-### 3.3 Thresholds & Saturation Points
+### 3.3 Threshold & Saturation
 
 - Static thresholds
-- Dynamic thresholds
+- Adaptive thresholds
 - Overload conditions
-- Spillover logic (dam analogy)
+- Saturation boundaries
 
-### 3.4 Hysteresis Loop
+### 3.4 Hysteresis
 
-- Forward vs backward path difference
-- "Stickiness" in user states
-- Persistence of state despite small input changes
+- Forward vs reverse path deviation
+- State persistence
+- Transition lag
 
 ### 3.5 Noise & Baseline
 
-- Baseline definition
-- Drift
+- Baseline mean (μ)
+- Standard deviation (σ)
+- Drift rate
 - Noise floor
-- SNR (signal-to-noise ratio)
+- Signal-to-noise ratio
 
 ### 3.6 Stability Metrics
 
 - Return-to-baseline time
-- Variance collapse
-- Rebound effects
-- Vortex Snap conditions (nonlinear correction)
+- Variance decay rate
+- Rebound magnitude
+- Nonlinear correction events
 
 ---
 
 ## 4. Translation Pipeline
 
 ```
-Raw input → UTML → CMP → Layer 3 Control Logic
+Raw Signal → Normalization → Feature Extraction → Topography Vector (T) → Layer 3
 ```
 
-### 4.1 Step 1 — Domain Ingestion
+### 4.1 Domain Ingestion
 
-Any sensor or API stream:
+Input stream:
 
 ```
 x(t) = raw_input_signal
@@ -124,7 +124,7 @@ x(t) = raw_input_signal
 
 ### 4.2 Step 2 — Normalize
 
-Unitless normalization across domains:
+Unitless scaling across domains:
 
 ```
 x_norm(t) = (x(t) - μ) / σ
