@@ -232,6 +232,8 @@ This diagram perfectly illustrates the "Dam & Spillway" concept. Just like a hyd
 
 Connector OS is designed to produce smoother degradation curves relative to naive stacks under identical constraints.
 
+Baseline measurements should be taken using an unregulated single-model stack under identical constraints to establish comparative degradation curves.
+
 **Expected Example:**  
 - 2000-byte prompt → 268-byte glyph  
 - Latency 600ms → async mode  
