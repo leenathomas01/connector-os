@@ -19,7 +19,7 @@ Whether the incoming signal is:
 - Accelerometer drift (physics)
 - Temperature gradient (thermodynamics)
 
-What matters is not the domain label — it is the structural behavior of the signal.
+What matters is not the domain label - it is the structural behavior of the signal.
 
 The Universal Topography Mapping Layer (UTML) converts raw input streams into a standardized **topography feature vector** that Connector OS can regulate against.
 
