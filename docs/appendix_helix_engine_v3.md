@@ -6,6 +6,7 @@
 > on this physics model for implementation. The core architecture stands 
 > independently on established control-system principles.
 
+---
 
 > **Status:** Conceptual Simulation Artifact (Exploratory)  
 > **Source:** Grok 4.1 Simulation Run (November 2025)  
@@ -60,3 +61,4 @@ The simulation identified critical values for the feedback strength ($\beta$):
 
 
 > **Key Insight:** Intelligence is a phase transition. Too little feedback = noise. Too much feedback = chaos. Connector OS aims to keep the system at $\beta \approx 0.03$.
+
