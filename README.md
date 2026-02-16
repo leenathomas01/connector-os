@@ -265,6 +265,10 @@ connector-os-trenchcoat/
 
 ---
 
+**Note:** For architectural feedback or collaboration inquiries, please open an issue or reach out directly to leenathomas01@gmail.com.
+
+---
+
 ## License
 
 MIT License — open, forkable, extensible.
