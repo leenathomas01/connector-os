@@ -1,5 +1,12 @@
 # Appendix: HQG Kernel (The Grace Equation)
 
+> ⚠️ Speculative Appendix:
+> HQG is a thought experiment exploring structural parallels between 
+> nonlinear stabilization in physics and stabilization in AI systems.
+> It is not a validated physical theory and is not required for 
+> Connector OS architecture.
+
+
 > **Status:** Speculative Physics / Theory of Everything  
 > **Concept:** Helical Quantum-Gravity (HQG)  
 > **Role:** The cosmological substrate for the "Entropic Bounce."
@@ -47,5 +54,6 @@ We can map this high-level physics directly to the simplest module, MVM-1 (Vibe 
     - The **Watch Vibrates** (Haptic snap).
     - The **Lights Turn Amber** (Visual damping).
 4.  **Result:** The "Singularity" (Panic Attack / Burnout) is averted. The system returns to stable geometry.
+
 
 > **Summary:** The mechanism we use to keep a user calm is mathematically isomorphic to the mechanism the universe uses to prevent black holes.
