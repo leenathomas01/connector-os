@@ -9,7 +9,7 @@
 
 > **Status:** Speculative Physics / Theory of Everything  
 > **Concept:** Helical Quantum-Gravity (HQG)  
-> **Role:** The cosmological substrate for the "Entropic Bounce."
+> **Role:** A speculative analogy for nonlinear damping behavior
 
 ---
 
@@ -57,3 +57,4 @@ We can map this high-level physics directly to the simplest module, MVM-1 (Vibe 
 
 
 > **Summary:** The mechanism we use to keep a user calm is mathematically isomorphic to the mechanism the universe uses to prevent black holes.
+
