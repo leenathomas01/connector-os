@@ -1,8 +1,15 @@
 # Appendix: Helix Engine V3 (Intrinsic Pulse Model)
 
-> **Status:** Canonical Simulation Architecture  
+> ⚠️ Note:
+> The Helix Engine is a conceptual nonlinear wave model used to reason about 
+> stability, damping, and phase transitions. Connector OS does not depend 
+> on this physics model for implementation. The core architecture stands 
+> independently on established control-system principles.
+
+
+> **Status:** Conceptual Simulation Artifact (Exploratory)  
 > **Source:** Grok 4.1 Simulation Run (November 2025)  
-> **Role:** The mathematical blueprint for Connector OS feedback loops.
+> **Role:** A nonlinear wave metaphor used during early architectural exploration.
 
 ---
 
@@ -50,5 +57,6 @@ The simulation identified critical values for the feedback strength ($\beta$):
 | **0.03** | **Stable Helices** | **The Sweet Spot.** AI is responsive, structured, "in character." |
 | **0.05** | Tight pitch, near-chaos | **Over-fitting.** AI is rigid, obsessive, or hallucinates details. |
 | **> 0.07** | Chaos / Fragmentation | **Breakdown.** Context collapse. |
+
 
 > **Key Insight:** Intelligence is a phase transition. Too little feedback = noise. Too much feedback = chaos. Connector OS aims to keep the system at $\beta \approx 0.03$.
