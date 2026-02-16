@@ -6,6 +6,7 @@
 > It is not a validated physical theory and is not required for 
 > Connector OS architecture.
 
+---
 
 > **Status:** Speculative Physics / Theory of Everything  
 > **Concept:** Helical Quantum-Gravity (HQG)  
@@ -57,5 +58,6 @@ We can map this high-level physics directly to the simplest module, MVM-1 (Vibe 
 
 
 > **Summary:** The mechanism we use to keep a user calm is structurally analogous to nonlinear stabilization mechanisms observed in physics to prevent black holes.
+
 
 
