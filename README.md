@@ -1,3 +1,13 @@
+# Connector OS v0.1
+
+> **Tagline:** Intelligence is not only in the model - it is in the architecture.
+
+![Connector OS 8-Layer Architecture](assets/layered_architecture_stack.png)
+
+A modular human–AI systems architecture grounded in adaptive control, threshold regulation, and closed-loop stability.
+
+---
+
 ## Architecture Before Scale (LinkedIn Article)
 
 This repository is summarized in the article:
@@ -9,15 +19,6 @@ Published February 20, 2026
 
 The article provides a narrative overview of the architectural principles.
 This repository contains the full technical specifications and implementation details.
-
----
-# Connector OS v0.1
-
-> **Tagline:** Intelligence is not only in the model - it is in the architecture.
-
-![Connector OS 8-Layer Architecture](assets/layered_architecture_stack.png)
-
-A modular human–AI systems architecture grounded in adaptive control, threshold regulation, and closed-loop stability.
 
 ---
 
