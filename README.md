@@ -1,3 +1,16 @@
+## Architecture Before Scale (LinkedIn Article)
+
+This repository is summarized in the article:
+
+Architecture Before Scale: A Control-Theoretic Framework for Stable AI Systems  
+Published February 20, 2026
+
+→ [Read the article on LinkedIn](https://www.linkedin.com/pulse/architecture-before-scale-control-theoretic-framework-leena-thomas-lv4vc/?trackingId=W8qCk7dtOPmYhtXXo%2F4bww%3D%3D)
+
+The article provides a narrative overview of the architectural principles.
+This repository contains the full technical specifications and implementation details.
+
+---
 # Connector OS v0.1
 
 > **Tagline:** Intelligence is not only in the model - it is in the architecture.
