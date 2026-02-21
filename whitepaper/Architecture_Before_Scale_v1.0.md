@@ -335,8 +335,9 @@ This implementation contains no model inference and no machine learning. It cons
 
 ## 6. THE EIGHT-LAYER STACK: COHERENCE OVERVIEW
 
+![Figure 4: Eight-Layer Stack](figures/fig04_eight_layer_stack.png)
+
 The complete architecture comprises eight layers, each encoding a control principle:
-![Figure 4: Eight-Layer Stack](figures/f ig04_eight_layer_stack.png)
 
 | Layer | Function | Control Principle |
 |-------|----------|-------------------|
