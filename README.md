@@ -1,4 +1,6 @@
-# Connector OS v0.1
+# Connector OS
+
+> Version: Architecture v1.0 (Whitepaper Published February 2026)
 
 > **Tagline:** Intelligence is not only in the model - it is in the architecture.
 
@@ -180,23 +182,29 @@ It demonstrates deterministic control logic under real physiological input.
 This is the minimal reproducible example of the architecture.
 
 
-## The Whitepaper
+## The Whitepaper (v1.0 Published)
 
-For a formal systems architecture treatment, see:
+The formal architectural treatment is available here:
 
 **Architecture Before Scale: A Control-Theoretic Framework for Stable AI Systems**
 
-- Specification: `whitepaper/Architecture_Before_Scale_v0.1-draft.md`
-- Status: Structure locked (v1.0 planned Week 4, February 2026)
+📄 PDF (Citable Artifact):
+`whitepaper/Architecture_Before_Scale_v1.0.pdf`
 
-This paper presents the theoretical backbone of Connector OS:
+📝 Markdown Source:
+`whitepaper/Architecture_Before_Scale_v1.0.md`
 
-- Why architecture determines stability
-- How universal control principles apply to AI
-- Empirical validation via stress testing
-- Practical implications for system design
+📘 Versioning Policy:
+`whitepaper/whitepaper_VERSIONING.md`
 
-For more, see `docs/02_layered_architecture.md`
+This document presents:
+- Formal problem statement
+- Universal control law grounding
+- Layer-by-layer architectural specification
+- Stress-test validation
+- Governance implications
+
+Whitepaper status: Final (v1.0, February 2026)
 
 ---
 
@@ -248,7 +256,7 @@ This repository is for:
 ## Repository Structure
 
 ```
-connector-os-trenchcoat/
+connector-os/
 ├── README.md
 ├── docs/
 │   ├── 01_overview_connector_os.md
@@ -264,6 +272,12 @@ connector-os-trenchcoat/
 ├── experiments/
 │ └── EXP-01_bandwidth_constraint_test.md
 |
+├── whitepaper/
+│   ├── Architecture_Before_Scale_v1.0.pdf
+│   ├── Architecture_Before_Scale_v1.0.md
+│   ├── whitepaper_README.md
+│   ├── whitepaper_VERSIONING.md
+│   └── figures/
 └── meta/
      └── contributor_models.md 
 ```
@@ -272,10 +286,10 @@ connector-os-trenchcoat/
 
 ## Status
 
-- Architecture: v0.1 (conceptually stable)
+- Architecture: v1.0 (Whitepaper Published)
 - MVM-1: Implementable
 - Additional MVMs: Iterative
-- Whitepaper (Phase 1.5): In preparation
+- Whitepaper: Archived release artifact (v1.0)
 
 ---
 
