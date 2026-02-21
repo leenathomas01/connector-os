@@ -119,6 +119,8 @@ This section establishes that Connector OS does not invent new regulatory princi
 
 ### 2.4 Pattern Recognition: Threshold → Feedback → Stabilization
 
+![Figure 2: Universal Control Pattern](figures/fig02_universal_control_pattern.png)
+
 Across all three systems:
 
 - **Sense continuously:** Pressure, load, temperature
