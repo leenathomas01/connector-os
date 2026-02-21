@@ -209,6 +209,8 @@ Bandwidth constraint is common in real deployments: voice APIs, mobile networks,
 
 ### 4.2 Context Entropy Under Narrow Pipes
 
+![Figure 3: Context Compression](figures/fig03_context_compression.png)
+
 Narrow bandwidth means sparse information. With 500 bytes (approximately 60 tokens), full conversation history cannot be transmitted.
 
 Traditional response: truncate and accept information loss.
@@ -334,6 +336,7 @@ This implementation contains no model inference and no machine learning. It cons
 ## 6. THE EIGHT-LAYER STACK: COHERENCE OVERVIEW
 
 The complete architecture comprises eight layers, each encoding a control principle:
+![Figure 4: Eight-Layer Stack](figures/f ig04_eight_layer_stack.png)
 
 | Layer | Function | Control Principle |
 |-------|----------|-------------------|
