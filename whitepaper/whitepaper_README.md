@@ -2,14 +2,14 @@
 
 **Title:** Architecture Before Scale: A Control-Theoretic Framework for Stable AI Systems  
 **Version:** 1.0  
-**Date:** February 2026  
+**Date:** 21 February 2026  
 **Status:** Final  
 
 ---
 
 ## Overview
 
-This whitepaper formalizes the architectural principles of Connector OS—a control-theoretic framework for building stable AI systems under real-world constraints.
+This whitepaper formalizes the architectural principles of Connector OS - a control-theoretic framework for building stable AI systems under real-world constraints.
 
 The core argument: **Stability is an architectural property, not a model property. Scale amplifies architecture. Therefore, architecture must precede scale.**
 
