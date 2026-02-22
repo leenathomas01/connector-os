@@ -1,4 +1,6 @@
-**Note**: This repository is published as a reference architecture. Issues may be opened for technical clarification; active community discussion is not currently enabled.
+**Publication Model:** Connector OS is released as a reference architecture.
+Issues may be opened for technical clarification. Open-ended community discussion is intentionally not enabled.
+
 # Connector OS
 
 > Version: Architecture v1.0 (Whitepaper Published February 2026)
@@ -40,6 +42,20 @@ The central thesis:
 Rather than treating AI models as standalone agents, Connector OS treats them as **pluggable components inside a regulated control stack**.
 
 The focus is coordination, routing, thresholding, and feedback - not scaling model size.
+
+---
+
+## Usage Note
+
+Connector OS is published as a reference architecture.
+
+It is intended to be studied, adapted, stress-tested, or reinterpreted within other system designs.  
+Many components are modular by design and can be extracted independently of the full stack.
+
+If you are evaluating, cloning, or building variations locally — that is its intended use case.
+
+Attribution is appreciated but not required.  
+The goal is structural legibility and reuse.
 
 ---
 
@@ -294,10 +310,6 @@ connector-os/
 
 ---
 
-**Note:** For architectural feedback or collaboration inquiries, please open an issue or reach out directly to leenathomas01@gmail.com.
-
----
-
 ## License
 
 MIT License — open, forkable, extensible.
@@ -329,5 +341,5 @@ This repository addresses the "Body Problem" for AI - how to give stateless mode
 - [Voice Mode Forensics](https://github.com/leenathomas01/voice-mode-forensics) - Prosodic alignment failures that informed this architecture
 - [Embodied Agent Governance](https://github.com/leenathomas01/embodied-agent-governance) - Governance patterns for agents with bodies
 - [The Continuity Problem](https://github.com/leenathomas01/The-Continuity-Problem) - Why state persistence requires governance
-
+- [Designing for Failure](https://github.com/leenathomas01/designing-for-failure) - Pattern language for catastrophic-state recovery discipline and survivability architecture.
 ---
