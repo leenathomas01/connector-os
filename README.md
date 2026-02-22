@@ -52,7 +52,7 @@ Connector OS is published as a reference architecture.
 It is intended to be studied, adapted, stress-tested, or reinterpreted within other system designs.  
 Many components are modular by design and can be extracted independently of the full stack.
 
-If you are evaluating, cloning, or building variations locally — that is its intended use case.
+If you are evaluating, cloning, or building variations locally - that is its intended use case.
 
 Attribution is appreciated but not required.  
 The goal is structural legibility and reuse.
