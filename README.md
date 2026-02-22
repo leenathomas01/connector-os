@@ -1,3 +1,4 @@
+**Note**: This repository is published as a reference architecture. Issues may be opened for technical clarification; active community discussion is not currently enabled.
 # Connector OS
 
 > Version: Architecture v1.0 (Whitepaper Published February 2026)
