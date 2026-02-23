@@ -335,7 +335,7 @@ Model-assisted documentation and diagrams credited in `meta/contributor_models.m
 This repository addresses the "Body Problem" for AI - how to give stateless models state-awareness and stability.
 
 **For a complete catalog of related research:**  
-📂 [AI Safety & Systems Architecture Research Index](https://github.com/leenathomas01/research-index)
+📂 [Research Index](https://github.com/leenathomas01/research-index)
 
 **Thematically related:**
 - [Voice Mode Forensics](https://github.com/leenathomas01/voice-mode-forensics) - Prosodic alignment failures that informed this architecture
